@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowBackground">@android:color/white</item>-->
+        <!--&lt;!&ndash;<item name="android:windowAnimationStyle">@style/WindowsAnim</item>&ndash;&gt;-->
+        <!--<item name="android:fitsSystemWindows">false</item>-->
+        <!--<item name="android:clipToPadding">false</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>

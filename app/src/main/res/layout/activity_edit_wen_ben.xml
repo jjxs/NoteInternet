@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.administrator.note.activity.EditWenBenActivity">
+
+    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+        xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/titlebar"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleBarColor="#fff"
+        titlebar:bottomLineColor="#666"
+        titlebar:leftType="imageButton"
+        titlebar:leftImageResource="@drawable/ic_arrow_back_black_24dp"
+        titlebar:rightType="imageButton"
+        titlebar:rightImageResource="@drawable/ic_done_black_24dp"
+        titlebar:centerType="textView"
+        android:gravity="center_vertical"
+        titlebar:centerText="小可爱的脑子"
+        titlebar:centerTextColor="#fff"
+        titlebar:centerTextSize="22sp"
+        />
+
+
+    <EditText
+        android:textColor="#000"
+        android:padding="5dp"
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/note_title"
+        android:gravity="start"
+        android:background="@null"
+        />
+
+</LinearLayout>
