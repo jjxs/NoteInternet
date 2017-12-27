@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -21,6 +22,8 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:26.0.0-beta1'
+    compile 'com.android.support:support-vector-drawable:26.0.0-beta1'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -44,5 +47,8 @@ dependencies {
 
     compile 'com.orhanobut:logger:2.1.1'
     compile 'com.github.hss01248:NotifyUtil:1.0.1'
+
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+
 
 }

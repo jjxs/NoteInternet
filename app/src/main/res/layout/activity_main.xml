@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/tools">
-
+    android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:fadingEdge="none"
-        />
+        android:fadingEdge="none" />
 
-    <com.melnykov.fab.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_add_black_24dp"
-        app:backgroundTint="@color/color_light_blue"
-        fab:fab_colorRipple="@color/ripple" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonColorNormal="@color/color_light_blue"
+        fab:fab_addButtonColorPressed="@color/click"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_size="mini">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/color_light_blue"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_book_black_24dp"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/color_light_blue"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/ic_settings_black_24dp"
+            fab:fab_size="mini" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
 </RelativeLayout>
